@@ -1,0 +1,103 @@
+body{
+    background-color:rgb(189, 222, 241, .5);
+}
+
+.hidden{
+   display: none; 
+}
+
+.intro{
+    margin: 2.5em 4em 0em 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.75em;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.intro-photos {
+    display:inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 27em;
+    margin-top: 3em;
+}
+
+.intro-photos img {
+    margin-left: 5em;
+    width: 50%;
+}
+
+#popBox {
+    display:none;
+   background-color:beige; 
+   height: 20em;
+   width: 35em;  
+   margin: 7em 0em 0em 35em;
+   animation-name: color-change;
+   animation-duration: 5s;
+   animation-iteration-count:infinite;
+
+}
+
+#popBox p{
+     margin-right:15em;
+}
+
+.showpopBox {
+    background-color: rgb(15, 170, 218);
+    width:17.5em;  
+    height: 2em;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+    
+}
+
+.two-items {
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 0em;
+
+}
+
+#info{
+  margin: 2em;
+}
+
+#name {
+    margin: 0em;
+}
+#pic {
+    margin:5em 0em 2em -14em;
+    border:rgb(228, 140, 68) solid 5px;
+    width:30%;
+    height:30%;
+}
+
+@keyframes color-change{
+    0% {
+        border: #fff solid 8px;  
+    }
+    50% {
+        border: #2103cf solid 8px;  
+    }
+    100% {
+        border: #767cd4 solid 8px;  
+    }
+}
+
+.active {
+    border: rgb(19, 29, 161) solid 5px;
+    transform: scale(1);
+    transition:1s;
+}
+
+
+.center{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
